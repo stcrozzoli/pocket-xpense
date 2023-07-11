@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowWallpaper(false);
-    }, 300);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);

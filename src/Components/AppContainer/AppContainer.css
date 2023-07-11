@@ -1,14 +1,13 @@
 .divPrincipal{
     border:1px solid black;
-    background-color: rgba(0, 0, 0, 0.493);
+    background-color: rgba(0, 0, 0, 0.438);
     width: 600px;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin-top: 15px;
-    margin-bottom: 15px;
+
 }
 
 
