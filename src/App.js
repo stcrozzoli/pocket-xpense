@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import AppContainer from './Components/AppContainer/AppContainer';
+import wallpaper from '../src/assets/notSpinner.png'
 
 function App() {
+  const [showWallpaper, setShowWallpaper] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowWallpaper(false);
+    }, 300);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {showWallpaper ? (
+        <img src={wallpaper} alt="Wallpaper" className="wallpaper"/>
+      ) : (
+        <AppContainer />
+      )}
     </div>
   );
 }

@@ -1,0 +1,221 @@
+.divPrincipal{
+    border:1px solid black;
+    background-color: rgba(0, 0, 0, 0.493);
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.divCambiarMes{
+    display: flex;
+}
+
+.logo{
+    width: 300px;
+    height: auto;
+}
+
+.ulTablaGastos{
+    color: rgba(255, 255, 255, 0.822);
+    list-style: none;
+    font-size: 1.5rem;
+    font-family: Calibri, sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.tituloMes{
+    color: rgba(255, 255, 255, 0.911);
+    font-family: Calibri, sans-serif;
+    font-size: 3rem;
+}
+
+.pCambiarMes{
+    color: rgba(255, 255, 255, 0.911);
+    font-family: Calibri, sans-serif;
+    font-size: 1.5rem;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.mesMasMenos{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 10px;
+    border: none;
+    background-color: transparent;
+    color: #36e8ff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.divTablaGastos{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 170px;
+    max-height: 170px;
+    overflow-y: scroll;
+    background-color: #c300ff2c;
+    border-radius: 15px;
+}
+
+.divTablaGastos::-webkit-scrollbar{
+    width: 10px;
+    background-color: #d446ff;
+    border-radius: 8px;
+}
+
+
+.divTablaGastos::-webkit-scrollbar-thumb {
+    background-color: #621dd1;
+    border-radius: 8px;
+  }
+
+.botonEliminar {
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    color: #000000;
+    cursor: pointer;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 16px;
+    padding: 6px 8px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    justify-self: self-start;
+    margin-left:10px;
+  }
+  
+  .botonEliminar:hover,
+  .botonEliminar:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #FF4742;
+  }
+  
+  .botonEliminar:active {
+    opacity: .5;
+  }
+
+
+.divContenedorTabla{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pTablaGastos{
+    color: rgba(255, 255, 255, 0.911);
+    font-family: Calibri, sans-serif;
+    font-size: 1.5rem;
+}
+
+.elementsUl{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+
+.botonesGastos {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 40px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  
+  .botonesGastos:focus {
+      box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    }
+    
+    .botonesGastos:hover {
+        box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+        transform: translateY(-2px);
+    }
+    
+    .botonesGastos:active {
+        box-shadow: #3c4fe0 0 3px 7px inset;
+        transform: translateY(2px);
+    }
+    
+    
+    .divInputs{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        width: 250px;
+    }
+
+    .inputsTwo{
+        border: 1px solid #ccc;
+        padding: 8px;
+        border-radius: 4px;
+        font-size: 14px;
+        outline: none;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    .mark{
+        position: fixed;
+        bottom: 2px;
+        right: 2px;
+        font-size: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
